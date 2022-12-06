@@ -1,2 +1,0 @@
-# monetariz
-my first project
