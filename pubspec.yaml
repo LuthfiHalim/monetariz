@@ -31,11 +31,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
   flutter_native_splash: ^2.2.16
   flutter_launcher_icons: ^0.11.0
+  dart_json_mapper: ^2.2.7
+  dart_json_mapper_flutter: ^2.0.1
+  flutter_bloc: ^8.1.1
+  hive: ^2.2.3
+  intl: ^0.17.0
+  equatable: ^2.0.5
+  hive_generator: ^2.0.0
+  hive_flutter: ^1.1.0
+  flutter_svg: ^1.1.6
+  pull_to_refresh: ^2.0.0 
+  shimmer: ^2.0.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  
 
 dev_dependencies:
   flutter_test:
@@ -87,3 +101,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+flutter_intl:
+  enabled: true
