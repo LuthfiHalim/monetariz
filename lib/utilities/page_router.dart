@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:monetariz/screens/home/home_screen.dart';
 import 'package:monetariz/screens/main_screen.dart';
-import 'package:monetariz/screens/portfolio/portfolio_screen.dart';
+import 'package:monetariz/screens/account/portfolio_screen.dart';
 import 'package:monetariz/screens/report/report_screen.dart';
 import 'package:monetariz/screens/settings/settings_screen.dart';
 import 'package:monetariz/screens/transaction/transaction_screen.dart';
@@ -18,8 +18,8 @@ class PageRouter {
         return _buildRoute(settings, const MainScreen());
       case Pages.home:
         return _buildRoute(settings, const HomeScreen());
-      case Pages.portfolio:
-        return _buildRoute(settings, const PortfolioScreen());
+      case Pages.account:
+        return _buildRoute(settings, const AccountScreen());
       case Pages.report:
         return _buildRoute(settings, const ReportScreen());
       case Pages.settings:

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:monetariz/utilities/color.dart';
 
 class Themes {
   static final ThemeData lightMode = ThemeData(
-    backgroundColor: Colors.white,
-    scaffoldBackgroundColor: Colors.white,
+    backgroundColor: CustomColor.greenBackgroundEDFFDB,
+    scaffoldBackgroundColor: CustomColor.greenBackgroundEDFFDB,
     // applyElevationOverlayColor: ,
     // bannerTheme: ,
     // bottomAppBarColor: ,
@@ -13,26 +14,26 @@ class Themes {
       backgroundColor: Colors.white,
       type: BottomNavigationBarType.fixed,
       elevation: 2,
-      // selectedIconTheme: IconThemeData(
-      //   color: CustomColor.violet7F3DFF,
-      //   size: 24,
-      // ),
-      // selectedItemColor: CustomColor.violet7F3DFF,
-      // selectedLabelStyle: TextStyle(
-      //   fontFamily: 'Montserrat',
-      //   color: CustomColor.violet7F3DFF,
-      //   fontSize: 12,
-      //   letterSpacing: 0.5,
-      //   fontWeight: FontWeight.w500,
-      // ),
-      unselectedIconTheme: IconThemeData(
-        color: Colors.black.withOpacity(0.4),
+      selectedIconTheme: const IconThemeData(
+        color: CustomColor.green5EA570,
+        size: 24,
+      ),
+      selectedItemColor: CustomColor.green5EA570,
+      selectedLabelStyle: const TextStyle(
+        fontFamily: 'Ubuntu',
+        color: CustomColor.green5EA570,
+        fontSize: 12,
+        letterSpacing: 0.5,
+        fontWeight: FontWeight.w500,
+      ),
+      unselectedIconTheme: const IconThemeData(
+        color: Colors.grey,
         size: 24,
       ),
       unselectedItemColor: Colors.black.withOpacity(0.4),
-      unselectedLabelStyle: TextStyle(
-        fontFamily: 'Montserrat',
-        color: Colors.black.withOpacity(0.4),
+      unselectedLabelStyle: const TextStyle(
+        fontFamily: 'Ubuntu',
+        color: Colors.grey,
         fontSize: 12,
         letterSpacing: 0.5,
         fontWeight: FontWeight.w400,
@@ -44,7 +45,10 @@ class Themes {
     // buttonTheme: ,
     // canvasColor: ,
     // cardColor: ,
-    // cardTheme: ,
+    cardTheme: const CardTheme(
+      elevation: 0,
+      margin: EdgeInsets.symmetric(vertical: 4),
+    ),
     // checkboxTheme: ,
     // chipTheme: ,
     // colorScheme: ,
@@ -61,7 +65,7 @@ class Themes {
     //   backgroundColor: CustomColor.violet7F3DFF,
     // ),
     // focusColor: ,
-    // fontFamily: ,
+    fontFamily: 'Ubuntu',
     // highlightColor: ,
     // hintColor: ,
     // hoverColor: ,
@@ -73,12 +77,12 @@ class Themes {
     // pageTransitionsTheme: ,
     // platform: ,
     // popupMenuTheme: ,
-    // primaryColor: ,
+    primaryColor: CustomColor.green5EA570,
     // primaryColorBrightness: ,
     // primaryColorDark: ,
     // primaryColorLight: ,
     // primaryIconTheme: ,
-    // primarySwatch: ,
+    primarySwatch: generateMaterialColor(CustomColor.green5EA570),
     // primaryTextTheme: ,
     // progressIndicatorTheme: ,
     // radioTheme: ,
