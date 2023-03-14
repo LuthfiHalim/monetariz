@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:monetariz/utilities/color.dart';
 import 'package:monetariz/utilities/layout_builder.dart';
 import 'package:monetariz/widgets/container/base_container.dart';
@@ -15,7 +16,7 @@ class TransactionScreen extends StatelessWidget {
 
 class TransactionMobileScreen extends StatelessWidget {
   const TransactionMobileScreen({Key? key}) : super(key: key);
-
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -415,6 +416,32 @@ class TransactionMobileScreen extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
+                ),
+                Slidable(
+                  startActionPane: ActionPane(
+                    motion: const ScrollMotion(),
+                    children: [
+                      SlidableAction(
+                        onPressed: (context) {},
+                        backgroundColor: const Color(0xFFFE4A49),
+                        foregroundColor: Colors.white,
+                        icon: Icons.delete,
+                        label: 'Delete',
+                      ),
+                      SlidableAction(
+                        onPressed: (context) {},
+                        backgroundColor: const Color(0xFF21B7CA),
+                        foregroundColor: Colors.white,
+                        icon: Icons.share,
+                        label: 'Share',
+                      ),
+                    ],
+                  ),
+                  child: const ListTile(
+                    tileColor: Colors.white,
+                    title: Text('Title'),
+                    subtitle: Text('Subtitle'),
                   ),
                 ),
                 const SizedBox(height: 10),
